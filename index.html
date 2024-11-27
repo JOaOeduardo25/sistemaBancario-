@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerenciador Bancário</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Gerenciador Bancário</h1>
+    <div id="user-section">
+      <h2>Cadastro do Usuário</h2>
+      <input type="text" id="nome" placeholder="Nome">
+      <input type="text" id="sobrenome" placeholder="Sobrenome">
+      <input type="text" id="cpf" placeholder="CPF">
+      <button id="save-user">Salvar Usuário</button>
+    </div>
+    <div id="bank-section" style="display: none;">
+      <h2>Procedimentos Bancários</h2>
+      <p>Saldo: <span id="saldo">R$ 0,00</span></p>
+      <input type="number" id="valor" placeholder="Valor">
+      <button id="depositar">Depositar</button>
+      <button id="sacar">Sacar</button>
+      <button id="encerrar">Encerrar Sessão</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
